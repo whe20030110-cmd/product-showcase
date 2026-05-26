@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 产品视觉生成 — 一张产品图，百变场景图</title>
+  <meta name="description" content="你只管提供产品实拍图，剩下的交给我们。AI 自动生成多场景效果图与动态短视频，¥1/张起，免费测试。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <script type="module" crossorigin src="/product-showcase/assets/index-DVSCPUBq.js"></script>
+  <link rel="stylesheet" crossorigin href="/product-showcase/assets/index-DcH6mtH1.css">
+</head>
+<body>
+  <!-- ═══════════════ Navigation ═══════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <svg class="logo-svg" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="url(#logoGrad)"/>
+          <path d="M10 22V10l6 8 6-8v12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs><linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#F97316"/></linearGradient></defs>
+        </svg>
+        <span>AI Visual Lab</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#features">功能</a>
+        <a href="#cases">案例</a>
+        <a href="#pricing">定价</a>
+        <a href="#faq">常见问题</a>
+      </div>
+      <a href="#cta" class="btn btn-sm btn-primary nav-cta">免费测试</a>
+      <button class="hamburger" id="hamburger" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ Hero ═══════════════ -->
+  <section class="hero" id="hero">
+    <canvas class="hero-particles" id="particles"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span>✦ AI 驱动 · 电商视觉新方案</span>
+      </div>
+      <h1 class="hero-title reveal">
+        你只需要提供产品图<br />
+        <span class="gradient-text">剩下的交给我们</span>
+      </h1>
+      <p class="hero-sub reveal">
+        上传一张产品实拍，AI 自动生成多场景模特图与动态视频。<br />零学习成本，一块钱一张起，先测试再合作。
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#cases" class="btn btn-lg btn-primary">查看案例效果</a>
+        <a href="#cta" class="btn btn-lg btn-outline">免费测试 →</a>
+      </div>
+      <!-- Platform badges -->
+      <div class="hero-platforms reveal">
+        <span class="platform-label">适配全平台</span>
+        <div class="platform-row">
+          <span class="platform-badge">TikTok Shop</span>
+          <span class="platform-badge">Amazon</span>
+          <span class="platform-badge">Shopee</span>
+          <span class="platform-badge">Lazada</span>
+          <span class="platform-badge">Temu</span>
+          <span class="platform-badge">SHEIN</span>
+          <span class="platform-badge">小红书</span>
+          <span class="platform-badge">独立站</span>
+        </div>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><strong id="count1">90</strong><span>% 成本节省</span></div>
+        <div class="stat"><strong>3 分钟</strong><span>单场景出图</span></div>
+        <div class="stat"><strong>50+</strong><span>场景风格可选</span></div>
+        <div class="stat"><strong>24h</strong><span>交付周期</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ AI 视觉团队 ═══════════════ -->
+  <section class="features" id="features">
+    <div class="section-header reveal">
+      <span class="section-tag">你的 AI 视觉团队</span>
+      <h2>不是工具，是一整套 AI 视觉方案</h2>
+      <p>从生成到交付，每个环节都有专属 AI 能力覆盖</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon">🎨</div>
+        <h3>AI 场景生成</h3>
+        <p class="feature-role">替代：摄影师 + 场地租赁</p>
+        <ul>
+          <li>多场景模特上身效果</li>
+          <li>咖啡厅 / 街拍 / 海滩 / 室内任意切换</li>
+          <li>保持产品细节 100% 还原</li>
+          <li>单场景最快 3 分钟出图</li>
+        </ul>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">🎬</div>
+        <h3>AI 视频生成</h3>
+        <p class="feature-role">替代：拍摄团队 + 后期剪辑</p>
+        <ul>
+          <li>产品图一键生成动态短视频</li>
+          <li>智能运镜 + 配乐 + 字幕</li>
+          <li>适配 TikTok / 小红书 / 直播背景</li>
+          <li>批量裂变多版本素材</li>
+        </ul>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">👗</div>
+        <h3>AI 模特换装</h3>
+        <p class="feature-role">替代：模特经纪 + 造型师</p>
+        <ul>
+          <li>多种族、多体型模特可选</li>
+          <li>姿势、角度自由调整</li>
+          <li>同款多色一键批量生成</li>
+          <li>白底图 / 场景图自由切换</li>
+        </ul>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">🖼️</div>
+        <h3>AI 素材裂变</h3>
+        <p class="feature-role">替代：美工团队 + 多平台适配</p>
+        <ul>
+          <li>一张图裂变多种尺寸</li>
+          <li>主图 / 详情页 / Banner / 社媒图</li>
+          <li>多语言商品图自动翻译</li>
+          <li>品牌风格统一输出</li>
+        </ul>
+      </div>
+      <div class="feature-card feature-card-wide reveal">
+        <div class="feature-icon">⚡</div>
+        <h3>极速交付</h3>
+        <p class="feature-role">替代：反复沟通 + 排期等待</p>
+        <ul>
+          <li>标准需求 24h 内交付</li>
+          <li>加急订单 6h 出图</li>
+          <li>7×24 随时可下单</li>
+          <li>不满意免费无限次调整</li>
+        </ul>
+      </div>
+      <div class="feature-card feature-card-wide reveal">
+        <div class="feature-icon">🔒</div>
+        <h3>零门槛零风险</h3>
+        <p class="feature-role">你只管发图，什么都不用学</p>
+        <ul>
+          <li>手机随手拍即可，无需专业设备</li>
+          <li>免费测试 1 张，满意再合作</li>
+          <li>按张计费，用多少付多少</li>
+          <li>无最低消费，无任何绑定</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ 三步开始 ═══════════════ -->
+  <section class="process" id="process">
+    <div class="section-header reveal">
+      <span class="section-tag">三步开始</span>
+      <h2>简单到不需要教程</h2>
+      <p>你只管发图，我们搞定一切</p>
+    </div>
+    <div class="process-cards">
+      <div class="process-card reveal">
+        <div class="process-num">01</div>
+        <div class="process-icon-wrap">
+          <svg viewBox="0 0 64 64" fill="none" class="process-svg">
+            <circle cx="32" cy="32" r="30" stroke="url(#pg1)" stroke-width="2" fill="none"/>
+            <path d="M22 40V24l8 6 8-6v16" stroke="url(#pg1)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs><linearGradient id="pg1" x1="0" y1="0" x2="64" y2="64"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#F97316"/></linearGradient></defs>
+          </svg>
+        </div>
+        <h3>发送产品实拍图</h3>
+        <p>手机随手拍一张产品照片发给我们，无需修图、无需专业设备、无需学习任何工具。一张图就够了。</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-card reveal">
+        <div class="process-num">02</div>
+        <div class="process-icon-wrap">
+          <svg viewBox="0 0 64 64" fill="none" class="process-svg">
+            <circle cx="32" cy="32" r="30" stroke="url(#pg2)" stroke-width="2" fill="none"/>
+            <rect x="18" y="20" width="28" height="20" rx="3" stroke="url(#pg2)" stroke-width="2" fill="none"/>
+            <circle cx="32" cy="30" r="5" stroke="url(#pg2)" stroke-width="1.5" fill="none"/>
+            <path d="M18 44l8-6 6 4 6-5 8 7" stroke="url(#pg2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs><linearGradient id="pg2" x1="0" y1="0" x2="64" y2="64"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#F97316"/></linearGradient></defs>
+          </svg>
+        </div>
+        <h3>AI 智能生成</h3>
+        <p>根据产品风格自动匹配场景、模特、光线，批量生成效果图与动态短视频。多种风格任选，无限次调整。</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-card reveal">
+        <div class="process-num">03</div>
+        <div class="process-icon-wrap">
+          <svg viewBox="0 0 64 64" fill="none" class="process-svg">
+            <circle cx="32" cy="32" r="30" stroke="url(#pg3)" stroke-width="2" fill="none"/>
+            <path d="M22 36l6 6 14-14" stroke="url(#pg3)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs><linearGradient id="pg3" x1="0" y1="0" x2="64" y2="64"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#F97316"/></linearGradient></defs>
+          </svg>
+        </div>
+        <h3>成品交付</h3>
+        <p>高清无水印原图直接交付给你。满意就用，不满意随时改。批量订单 24h 内完成，支持紧急加急。</p>
+      </div>
+    </div>
+    <div class="process-cta reveal">
+      <a href="#cta" class="btn btn-lg btn-primary">立即发图测试 →</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════ 案例展示 ═══════════════ -->
+  <section class="cases" id="cases">
+    <div class="section-header reveal">
+      <span class="section-tag">真实案例</span>
+      <h2>碎花吊带 · 完整视觉流程</h2>
+      <p>从实拍原图到多场景效果，一杯咖啡的时间全搞定</p>
+    </div>
+    <!-- Steps indicator -->
+    <div class="showcase-steps reveal">
+      <div class="showcase-step active"><span class="step-num">1</span><span class="step-label">实拍原图</span></div>
+      <div class="step-line"></div>
+      <div class="showcase-step"><span class="step-num">2</span><span class="step-label">AI 多场景</span></div>
+      <div class="step-line"></div>
+      <div class="showcase-step"><span class="step-num">3</span><span class="step-label">AI 视频</span></div>
+    </div>
+    <!-- Real photos -->
+    <div class="case-row reveal">
+      <h3 class="case-subtitle"><span class="case-tag">实拍</span> 手机随手拍 · 人台展示</h3>
+      <div class="photo-grid">
+        <div class="photo-card">
+          <img src="/product-showcase/assets/images/product-front.jpg" alt="碎花吊带正面实拍" loading="lazy" />
+          <span class="photo-label">正面实拍</span>
+        </div>
+        <div class="photo-card">
+          <img src="/product-showcase/assets/images/product-back.jpg" alt="碎花吊带背面实拍" loading="lazy" />
+          <span class="photo-label">背面实拍</span>
+        </div>
+      </div>
+    </div>
+    <!-- AI effect -->
+    <div class="case-row reveal">
+      <h3 class="case-subtitle"><span class="case-tag accent">AI 生成</span> 5 大生活场景上身效果</h3>
+      <div class="ai-image-card">
+        <img src="/product-showcase/assets/images/ai-effect.png" alt="AI 多场景上身效果" loading="lazy" />
+        <span class="photo-label accent-label">AI 一键生成</span>
+      </div>
+    </div>
+    <!-- Videos -->
+    <div class="case-row reveal">
+      <h3 class="case-subtitle"><span class="case-tag video-tag">视频</span> AI 动态演绎</h3>
+      <div class="video-grid">
+        <div class="video-card" data-video-id="1">
+          <video src="/product-showcase/assets/videos/ai-video-1.mp4" muted loop playsinline preload="auto" class="showcase-video"></video>
+          <div class="video-overlay"><div class="play-btn"><span>▶</span></div><span class="video-label">AI 视频 #1</span></div>
+        </div>
+        <div class="video-card" data-video-id="2">
+          <video src="/product-showcase/assets/videos/ai-video-2.mp4" muted loop playsinline preload="auto" class="showcase-video"></video>
+          <div class="video-overlay"><div class="play-btn"><span>▶</span></div><span class="video-label">AI 视频 #2</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ 定价 ═══════════════ -->
+  <section class="pricing" id="pricing">
+    <div class="section-header reveal">
+      <span class="section-tag">超低门槛</span>
+      <h2>一块一张起 · 先测试再决定</h2>
+      <p>先免费测试效果，满意后选择最适合你的方案</p>
+    </div>
+    <div class="pricing-cards">
+      <!-- Free -->
+      <div class="pricing-card reveal">
+        <div class="pricing-header">
+          <h3>免费测试</h3>
+          <div class="price"><strong>¥0</strong></div>
+          <p>先看效果，满意再合作</p>
+        </div>
+        <ul>
+          <li>✓ 免费生成 1 张效果图</li>
+          <li>✓ 确认风格匹配</li>
+          <li>✓ 无任何绑定</li>
+          <li>✓ 效果满意再谈合作</li>
+        </ul>
+        <a href="#cta" class="btn btn-outline btn-block">发图测试</a>
+      </div>
+      <!-- Popular -->
+      <div class="pricing-card popular reveal">
+        <span class="popular-badge">最受欢迎</span>
+        <div class="pricing-header">
+          <h3>按张计费</h3>
+          <div class="price"><strong>¥1</strong><span>/张起</span></div>
+          <p>用多少付多少，灵活自由</p>
+        </div>
+        <ul>
+          <li>✓ 单张 ¥1 起步</li>
+          <li>✓ 多场景灵活选择</li>
+          <li>✓ 效果图 & 短视频</li>
+          <li>✓ 量大价格更优</li>
+          <li>✓ 24 小时内交付</li>
+          <li>✓ 不满意免费调整</li>
+        </ul>
+        <a href="#cta" class="btn btn-primary btn-block">立即发图</a>
+      </div>
+      <!-- Enterprise -->
+      <div class="pricing-card reveal">
+        <div class="pricing-header">
+          <h3>批量合作</h3>
+          <div class="price"><strong>专属价</strong></div>
+          <p>长期量大，价格另议</p>
+        </div>
+        <ul>
+          <li>✓ 专属折扣价格</li>
+          <li>✓ 不限产品数量</li>
+          <li>✓ 不限效果图数量</li>
+          <li>✓ 专属风格定制</li>
+          <li>✓ 12 小时内交付</li>
+          <li>✓ 专属客户对接</li>
+        </ul>
+        <a href="#cta" class="btn btn-outline btn-block">联系客服</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FAQ ═══════════════ -->
+  <section class="faq" id="faq">
+    <div class="section-header reveal">
+      <span class="section-tag">常见问题</span>
+      <h2>你可能想知道的</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <span>需要我学什么工具吗？</span>
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>完全不需要。你只需要用手机拍一张产品的实拍照片发给我们，剩下的全部由我们来完成。没有任何工具需要学习，没有任何软件需要安装。这也是我们服务的核心——让商家专注自己的产品和生意，视觉素材全部外包给我们。</p>
+        </div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <span>效果能保证和实物一样吗？</span>
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>我们采用最新的 AI 技术，能够精准还原产品的材质、颜色、版型等细节。首次合作免费测试 1 张，你可以亲眼看到效果再决定是否继续。不满意随时调整，直到你满意为止。</p>
+        </div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <span>支持哪些品类的产品？</span>
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>目前主要覆盖服装类（上衣、裤子、连衣裙、外套、内衣等），鞋包配饰类也在持续扩展中。如果有特殊品类需求，可以先发图给我们测试，确认可行后再合作。</p>
+        </div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <span>交付周期多久？可以加急吗？</span>
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>标准订单 24 小时内交付。加急订单最快 6 小时出图。批量订单根据数量协商，量大从优。</p>
+        </div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <span>图片版权归谁？</span>
+          <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>所有生成的图片和视频版权 100% 归你所有。你可以自由用于电商平台、社交媒体、广告投放等任何商业用途。我们不会保留或二次使用你的素材。</p>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CTA ═══════════════ -->
+  <section class="cta" id="cta">
+    <div class="cta-inner reveal">
+      <div class="cta-text">
+        <h2>让 AI 成为你的<span class="gradient-text">视觉合伙人</span></h2>
+        <p class="cta-desc">点我头像，免费测试一张。满意再谈合作，不满意不求你。</p>
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-lg btn-primary">点我头像 · 立即体验</a>
+        </div>
+        <p class="cta-note">发一张产品图，3 分钟看到效果</p>
+      </div>
+      <div class="cta-qr">
+        <div class="qr-card">
+          <img src="/product-showcase/wechat-qr.png" alt="扫码添加微信" />
+        </div>
+        <span class="qr-label">扫码添加微信，立即免费测试</span>
+        <span class="qr-badge">💬 微信扫一扫</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ Footer ═══════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg class="logo-svg" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="url(#flogo)"/>
+          <path d="M10 22V10l6 8 6-8v12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs><linearGradient id="flogo" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#F97316"/></linearGradient></defs>
+        </svg>
+        <span>AI Visual Lab</span>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">首页</a>
+        <a href="#features">功能</a>
+        <a href="#cases">案例</a>
+        <a href="#pricing">定价</a>
+        <a href="#faq">常见问题</a>
+        <a href="#cta">联系我们</a>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 AI Visual Lab. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
